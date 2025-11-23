@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 text-slate-900;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+.input {
+  @apply w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 bg-white/70;
+}
+
+.btn-pink {
+  @apply w-full mt-2 rounded-2xl bg-pink-400 text-white font-semibold py-2 shadow-md hover:bg-pink-500 disabled:opacity-60;
+}
+
+.btn-purple {
+  @apply w-full mt-2 rounded-2xl bg-purple-400 text-white font-semibold py-2 shadow-md hover:bg-purple-500 disabled:opacity-60;
+}
