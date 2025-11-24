@@ -25,8 +25,9 @@ const App = () => {
           <Route path="/manage-menu" element={<ManageMenu />} />
           <Route path="/menu-preview" element={<MenuPreview />} />
           <Route path="/qr" element={<QRPage />} />
-          <Route path="/menu/:vendorId" element={<CustomerMenu />} />
         </Route>
+
+        <Route path="/menu/:vendorId" element={<CustomerMenu />} />
       </Routes>
 
       <Footer/>
