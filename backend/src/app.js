@@ -14,6 +14,10 @@ app.use(express.static('public'))
 
 app.use(cookieParser())
 
+app.get('/',(req,res) => {
+  res.send('Smart menu API is Live')
+})
+
 import vendorRoutes from './routes/vendor.routes.js'
 import categoryRoutes from './routes/category.routes.js'
 import menuItemRoutes from './routes/menuItem.routes.js'
