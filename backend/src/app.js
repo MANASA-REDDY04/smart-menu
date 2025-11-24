@@ -26,7 +26,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.send("Smart menu API is Live 🚀");
+  res.send("Smart menu API is Live");
 });
 
 // Routes
